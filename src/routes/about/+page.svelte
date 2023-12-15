@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
-	console.log('/about/+page.svelte')
+	console.log('/about/+page.svelte');
 </script>
 
 <svelte:head>

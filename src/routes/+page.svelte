@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { myStoreData } from '$lib/stores';
-	
-	console.log('/+page.svelte')
+
+	console.log('/+page.svelte');
 </script>
 
 <svelte:head>
