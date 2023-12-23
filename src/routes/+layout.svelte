@@ -1,5 +1,5 @@
 <script lang="ts">
-	console.log('/+layout.svelte')
+	console.log('/+layout.svelte');
 </script>
 
 <slot />
