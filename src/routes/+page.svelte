@@ -2,12 +2,13 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { name } from '$lib/stores';
+	import MyName from './MyName.svelte';
 
 	console.log('[<script>] /+page.svelte');
 
 	onMount(() => {
 		$name = 'SvelteKit Inspect Parts';
-		
+
 		console.log('[onMount()] /+page.svelte');
 	});
 </script>
@@ -19,3 +20,4 @@
 
 <div>Hello, world!</div>
 <button on:click={() => goto('/about')}>About</button>
+<MyName />
