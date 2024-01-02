@@ -1,3 +1,7 @@
+<script context="module" lang="ts">
+	console.log('[<script context="module">] /+page.svelte');
+</script>
+
 <script lang="ts">
 	import { onMount, afterUpdate } from 'svelte';
 	import { goto } from '$app/navigation';
