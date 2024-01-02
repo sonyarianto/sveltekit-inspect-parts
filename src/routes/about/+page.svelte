@@ -1,7 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 
-	console.log('/about/+page.svelte');
+	console.log('[<script>] /about/+page.svelte');
+
+	onMount(() => {
+		console.log('[onMount()] /about/+page.svelte');
+	});
 </script>
 
 <svelte:head>

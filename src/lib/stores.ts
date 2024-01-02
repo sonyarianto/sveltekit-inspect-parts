@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
 
-export const myStoreData = writable('');
+export const name = writable('');
 
-console.log('src/lib/stores.ts');
+console.log('[.ts file] src/lib/stores.ts');

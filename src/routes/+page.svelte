@@ -1,8 +1,15 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { myStoreData } from '$lib/stores';
+	import { name } from '$lib/stores';
 
-	console.log('/+page.svelte');
+	console.log('[<script>] /+page.svelte');
+
+	onMount(() => {
+		$name = 'SvelteKit Inspect Parts';
+		
+		console.log('[onMount()] /+page.svelte');
+	});
 </script>
 
 <svelte:head>
