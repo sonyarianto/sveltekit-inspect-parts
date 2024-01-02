@@ -1,11 +1,17 @@
 # sveltekit-inspect-parts
 
-## Instalation
+## Why?
 
-1. Clone this repository to your local
-2. Open this project directory `cd sveltekit-inspect-parts`
-3. Run `npm install` in your terminal
+At the time I am just curious which part of my code runs first on various Svelte lifecycle and runtime. By using this repo now I at least understand how the Svelte manage sequence of code, so then I can make better SvelteKit app.
+
+## Installation
+
+1. Clone this repository
+2. Go to the project directory `cd sveltekit-inspect-parts`
+3. Run `npm install`
 4. Run `npm run dev`
-5. Open the console
+5. Ready and go :)
 
-This simple project is to show which code that runs first.
+## Licence
+
+MIT
