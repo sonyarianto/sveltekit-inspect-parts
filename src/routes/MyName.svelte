@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount, afterUpdate } from 'svelte';
+	import { onMount, afterUpdate, onDestroy } from 'svelte';
 	import { name } from '$lib/stores';
 	import { browser } from '$app/environment';
 
@@ -7,6 +7,10 @@
 
 	onMount(() => {
 		console.log('[onMount()] /MyName.svelte');
+	});
+
+	onDestroy(() => {
+		console.log('[onDestroy()] /MyName.svelte');
 	});
 
 	afterUpdate(() => {

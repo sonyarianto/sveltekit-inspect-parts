@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import { onMount, afterUpdate } from 'svelte';
+	import { onMount, afterUpdate, onDestroy } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { name } from '$lib/stores';
 	import MyName from './MyName.svelte';
@@ -15,6 +15,10 @@
 		$name = 'SvelteKit Inspect Parts';
 
 		console.log('[onMount()] /+page.svelte');
+	});
+
+	onDestroy(() => {
+		console.log('[onDestroy()] /+page.svelte');
 	});
 
 	afterUpdate(() => {

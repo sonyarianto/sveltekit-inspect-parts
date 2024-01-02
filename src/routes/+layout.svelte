@@ -1,11 +1,15 @@
 <script lang="ts">
-	import { onMount, afterUpdate } from 'svelte';
+	import { onMount, afterUpdate, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
 
 	console.log('[<script>] /+layout.svelte');
 
 	onMount(() => {
 		console.log('[onMount()] /+layout.svelte');
+	});
+
+	onDestroy(() => {
+		console.log('[onDestroy()] /+layout.svelte');
 	});
 
 	afterUpdate(() => {
