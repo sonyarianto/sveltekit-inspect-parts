@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount, afterUpdate } from 'svelte';
 	import { name } from '$lib/stores';
+	import { browser } from '$app/environment';
 
 	console.log('[<script>] /MyName.svelte');
 
@@ -11,6 +12,10 @@
 	afterUpdate(() => {
 		console.log('[afterUpdate()] /MyName.svelte');
 	});
+
+	if (browser) {
+		console.log('[browser] /MyName.svelte');
+	}
 </script>
 
 <div>

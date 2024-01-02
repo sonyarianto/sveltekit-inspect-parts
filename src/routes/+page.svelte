@@ -7,6 +7,7 @@
 	import { goto } from '$app/navigation';
 	import { name } from '$lib/stores';
 	import MyName from './MyName.svelte';
+	import { browser } from '$app/environment';
 
 	console.log('[<script>] /+page.svelte');
 
@@ -19,6 +20,10 @@
 	afterUpdate(() => {
 		console.log('[afterUpdate()] /+page.svelte');
 	});
+
+	if (browser) {
+		console.log('[browser] /+page.svelte');
+	}
 </script>
 
 <svelte:head>
