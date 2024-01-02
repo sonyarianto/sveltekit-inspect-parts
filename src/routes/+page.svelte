@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, afterUpdate } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { name } from '$lib/stores';
 	import MyName from './MyName.svelte';
@@ -10,6 +10,10 @@
 		$name = 'SvelteKit Inspect Parts';
 
 		console.log('[onMount()] /+page.svelte');
+	});
+
+	afterUpdate(() => {
+		console.log('[afterUpdate()] /+page.svelte');
 	});
 </script>
 

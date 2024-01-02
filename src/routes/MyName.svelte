@@ -1,11 +1,15 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, afterUpdate } from 'svelte';
 	import { name } from '$lib/stores';
 
 	console.log('[<script>] /MyName.svelte');
 
 	onMount(() => {
 		console.log('[onMount()] /MyName.svelte');
+	});
+
+	afterUpdate(() => {
+		console.log('[afterUpdate()] /MyName.svelte');
 	});
 </script>
 
